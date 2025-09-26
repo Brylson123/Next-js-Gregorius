@@ -1,6 +1,8 @@
 import Header from '@/components/Header'
 import Navigation from '@/components/Navigation'
 import GoogleMap from '@/components/GoogleMap'
+import ContactForm from '@/components/ContactForm'
+import { Toaster } from 'react-hot-toast'
 
 export default function Kontakt() {
   return (
@@ -13,72 +15,73 @@ export default function Kontakt() {
         <div className="mt-6 lg:mt-8">
           <h1 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6">Kontakt</h1>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <h2 className="section-title">Dane kontaktowe</h2>
-              
-              <div className="space-y-4">
-                <div>
-                  <h3 className="font-semibold text-gray-800">Strona internetowa:</h3>
-                  <a href="https://www.gregorius.pl" className="text-blue-600 hover:text-blue-800">
-                    www.gregorius.pl
-                  </a>
-                </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-1">
+              <div className="bg-white rounded-xl shadow-lg p-6">
+                <h2 className="section-title">Kontakt</h2>
                 
-                <div>
-                  <h3 className="font-semibold text-gray-800">Telefon:</h3>
-                  <p>012 645 13 61</p>
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span className="text-blue-600 font-bold">📞</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">Telefon</p>
+                      <p className="text-gray-600">012 645 13 61</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span className="text-blue-600 font-bold">📱</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">Komórka</p>
+                      <p className="text-gray-600">501 271 070</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span className="text-blue-600 font-bold">✉️</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">Email</p>
+                      <a href="mailto:biuro@gregorius.pl" className="text-blue-600 hover:text-blue-800">
+                        biuro@gregorius.pl
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                
-                <div>
-                  <h3 className="font-semibold text-gray-800">Fax:</h3>
-                  <p>012 640 56 50</p>
-                </div>
-                
-                <div>
-                  <h3 className="font-semibold text-gray-800">Telefon komórkowy:</h3>
-                  <p>501 271 070</p>
-                </div>
-                
-                <div>
-                  <h3 className="font-semibold text-gray-800">E-mail:</h3>
-                  <a href="mailto:biuro@gregorius.pl" className="text-blue-600 hover:text-blue-800">
-                    biuro@gregorius.pl
-                  </a>
-                </div>
-              </div>
-
-              <div className="mt-8">
-                <h2 className="section-title">O firmie</h2>
-                <p className="content-text">
-                  Producent tulei cylindrowych i gniazd zaworowych. Nasze wyroby wykonywane są 
-                  z odlewów firmy Mahle Polska Sp. z o.o. - Krotoszyn oraz Prima S.A.
-                </p>
-                <p className="content-text mt-4 font-semibold">
-                  Serdecznie zapraszamy do współpracy.
-                </p>
-              </div>
-
-              <div className="mt-8">
-                <h2 className="section-title">Właściciel</h2>
-                <p className="content-text">
-                  <strong>Gregorius Grzegorz Marcin Urbaniak</strong><br />
-                  Os. Na Wzgórzach 22<br />
-                  31-723 Kraków
-                </p>
               </div>
             </div>
 
-            <div>
+            <div className="lg:col-span-2">
+              <div className="bg-white rounded-xl shadow-lg p-6">
+                <h2 className="section-title">Wyślij wiadomość</h2>
+                <ContactForm />
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <div className="bg-white rounded-xl shadow-lg p-6">
               <h2 className="section-title">Lokalizacja</h2>
-              <GoogleMap className="mb-4" />
-              
-              <div className="bg-blue-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-gray-800 mb-2">Adres:</h3>
-                <p className="content-text">
-                  os. Na Wzgórzach 22<br />
-                  31-723 Kraków
-                </p>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                  <GoogleMap className="mb-4 rounded-lg overflow-hidden" />
+                </div>
+                <div className="bg-blue-50 p-6 rounded-lg">
+                  <h3 className="font-semibold text-gray-800 mb-4 flex items-center">
+                    <span className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center mr-3">📍</span>
+                    Adres
+                  </h3>
+                  <p className="content-text">
+                    <strong>Gregorius Grzegorz Marcin Urbaniak</strong><br />
+                    os. Na Wzgórzach 22<br />
+                    31-723 Kraków
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -90,6 +93,7 @@ export default function Kontakt() {
           </div>
         </div>
       </main>
+      <Toaster position="top-right" />
     </div>
   )
 }
