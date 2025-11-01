@@ -13,10 +13,25 @@ export default function Produkty() {
         <div className="mt-6 lg:mt-8">
           <h1 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6">Produkty</h1>
           
-          <div className="flex flex-wrap gap-4 mb-8">
-            <a href="#tuleje-suche" className="text-blue-600 hover:text-blue-800 underline">Tuleje suche</a>
-            <a href="#tuleje-mokre" className="text-blue-600 hover:text-blue-800 underline">Tuleje mokre</a>
-            <a href="#gniazda-zaworowe" className="text-blue-600 hover:text-blue-800 underline">Gniazda zaworowe</a>
+          <div className="flex flex-col gap-3 mb-8">
+            <a 
+              href="#tuleje-suche" 
+              className="flex items-center justify-center bg-white hover:bg-blue-50 text-blue-600 hover:text-blue-700 font-semibold py-3 px-6 rounded-lg border border-blue-200 hover:border-blue-300 shadow-md hover:shadow-lg transition-all duration-200 w-full"
+            >
+              Tuleje suche
+            </a>
+            <a 
+              href="#tuleje-mokre" 
+              className="flex items-center justify-center bg-white hover:bg-blue-50 text-blue-600 hover:text-blue-700 font-semibold py-3 px-6 rounded-lg border border-blue-200 hover:border-blue-300 shadow-md hover:shadow-lg transition-all duration-200 w-full"
+            >
+              Tuleje mokre
+            </a>
+            <a 
+              href="#gniazda-zaworowe" 
+              className="flex items-center justify-center bg-white hover:bg-blue-50 text-blue-600 hover:text-blue-700 font-semibold py-3 px-6 rounded-lg border border-blue-200 hover:border-blue-300 shadow-md hover:shadow-lg transition-all duration-200 w-full"
+            >
+              Gniazda zaworowe
+            </a>
           </div>
 
           <div className="mb-8">

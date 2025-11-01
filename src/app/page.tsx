@@ -12,11 +12,11 @@ export default function Home() {
         <div className="mt-6 lg:mt-8">
           <h1 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6">Informacje o firmie</h1>
           
-          <div className="flex flex-wrap gap-2 lg:gap-4 mb-6 lg:mb-8">
-            <a href="#nasz-cel" className="text-sm lg:text-base text-blue-600 hover:text-blue-800 underline bg-blue-50 hover:bg-blue-100 px-3 py-1 rounded-full transition-colors">Nasz cel</a>
-            <a href="#tradycja" className="text-sm lg:text-base text-blue-600 hover:text-blue-800 underline bg-blue-50 hover:bg-blue-100 px-3 py-1 rounded-full transition-colors">Tradycja</a>
-            <a href="#rozwoj" className="text-sm lg:text-base text-blue-600 hover:text-blue-800 underline bg-blue-50 hover:bg-blue-100 px-3 py-1 rounded-full transition-colors">Rozwój</a>
-            <a href="#nip" className="text-sm lg:text-base text-blue-600 hover:text-blue-800 underline bg-blue-50 hover:bg-blue-100 px-3 py-1 rounded-full transition-colors">NIP</a>
+          <div className="flex flex-col gap-3 mb-6 lg:mb-8">
+            <a href="#nasz-cel" className="flex items-center justify-center text-sm lg:text-base text-blue-600 hover:text-blue-700 font-semibold py-3 px-6 rounded-lg border border-blue-200 hover:border-blue-300 bg-white hover:bg-blue-50 shadow-md hover:shadow-lg transition-all duration-200 w-full">Nasz cel</a>
+            <a href="#tradycja" className="flex items-center justify-center text-sm lg:text-base text-blue-600 hover:text-blue-700 font-semibold py-3 px-6 rounded-lg border border-blue-200 hover:border-blue-300 bg-white hover:bg-blue-50 shadow-md hover:shadow-lg transition-all duration-200 w-full">Tradycja</a>
+            <a href="#rozwoj" className="flex items-center justify-center text-sm lg:text-base text-blue-600 hover:text-blue-700 font-semibold py-3 px-6 rounded-lg border border-blue-200 hover:border-blue-300 bg-white hover:bg-blue-50 shadow-md hover:shadow-lg transition-all duration-200 w-full">Rozwój</a>
+            <a href="#nip" className="flex items-center justify-center text-sm lg:text-base text-blue-600 hover:text-blue-700 font-semibold py-3 px-6 rounded-lg border border-blue-200 hover:border-blue-300 bg-white hover:bg-blue-50 shadow-md hover:shadow-lg transition-all duration-200 w-full">NIP</a>
           </div>
 
           <div className="space-y-6 lg:space-y-8">

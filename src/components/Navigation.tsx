@@ -8,7 +8,6 @@ const navigationItems = [
   { href: '/produkty', label: 'Produkty' },
   { href: '/technologia', label: 'Technologia' },
   { href: '/kontakt', label: 'Kontakt' },
-  { href: 'mailto:biuro@gregorius.pl', label: 'E-mail' },
 ]
 
 export default function Navigation() {
