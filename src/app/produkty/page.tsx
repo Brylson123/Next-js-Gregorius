@@ -29,53 +29,83 @@ export default function Produkty() {
           </div>
 
           <div className="space-y-12">
-            <section id="tuleje-suche" className="flex flex-col lg:flex-row gap-8 items-center">
-              <div className="flex-1">
-                <h2 className="section-title">Tuleje suche</h2>
-                <p className="content-text">
-                  Produkujemy cienkościenne tuleje cylindrowe suche o średnicach wewnętrznych 
-                  od 35 do 140 mm. Nasze produkty przeznaczone są dla wszystkich typów silników 
-                  spalinowych, sprężarek i kosiarek. Realizujemy również zamówienia indywidualne 
-                  według specyfikacji klienta.
-                </p>
-              </div>
-              <div className="w-full lg:w-80 h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Zdjęcie tulei suchych</span>
-              </div>
-            </section>
-
-            <section id="tuleje-mokre" className="flex flex-col lg:flex-row gap-8 items-center">
-              <div className="flex-1">
-                <h2 className="section-title">Tuleje mokre</h2>
-                <p className="content-text">
-                  Oferujemy grubościenne tuleje cylindrowe mokre o średnicach wewnętrznych 
-                  od 60 do 137 mm. Produkty przeznaczone dla wszystkich typów silników 
-                  spalinowych i maszyn. Dostępne zamówienia indywidualne według wymagań klienta.
-                </p>
-              </div>
-              <div className="w-full lg:w-80 h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Zdjęcie tulei mokrych</span>
+            <section id="tuleje-suche" className="bg-white rounded-xl shadow-lg p-6 lg:p-8">
+              <div className="flex flex-col lg:flex-row gap-8 items-center">
+                <div className="flex-1">
+                  <h2 className="section-title">Tuleje suche</h2>
+                  <p className="content-text">
+                    Produkujemy cienkościenne tuleje cylindrowe suche o średnicach wewnętrznych 
+                    od 35 do 140 mm. Nasze produkty przeznaczone są dla wszystkich typów silników 
+                    spalinowych, sprężarek i kosiarek. Realizujemy również zamówienia indywidualne 
+                    według specyfikacji klienta.
+                  </p>
+                </div>
+                <div className="w-full lg:w-96 h-80 bg-white rounded-lg p-8 flex items-center justify-center border border-gray-200 shadow-md">
+                  <div className="relative w-full max-w-[300px] h-[250px] bg-white">
+                    <Image
+                      src="/photo/tuleja sucha.png"
+                      alt="Tuleje suche"
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 1024px) 100vw, 300px"
+                    />
+                  </div>
+                </div>
               </div>
             </section>
 
-            <section id="gniazda-zaworowe" className="flex flex-col lg:flex-row gap-8 items-center">
-              <div className="flex-1">
-                <h2 className="section-title">Gniazda zaworowe</h2>
-                <p className="content-text">
-                  Produkujemy gniazda zaworowe w trzech wersjach:
-                </p>
-                <ul className="list-disc list-inside mt-4 space-y-2 content-text">
-                  <li><strong>Dla silników benzynowych:</strong> wykonane ze specjalnego żeliwa odpornego na wysokie temperatury</li>
-                  <li><strong>Dla silników benzynowo-gazowych:</strong> wykonane ze specjalnie opracowanego żeliwa dla cięższych warunków pracy</li>
-                  <li><strong>Dla silników wysokoprężnych:</strong> wykonane ze specjalnego żeliwa dla szczególnie trudnych warunków</li>
-                </ul>
-                <p className="content-text mt-4">
-                  Gniazda zaworowe produkowane są dla wszystkich typów silników. 
-                  Realizujemy zamówienia indywidualne.
-                </p>
+            <section id="tuleje-mokre" className="bg-white rounded-xl shadow-lg p-6 lg:p-8">
+              <div className="flex flex-col lg:flex-row gap-8 items-center">
+                <div className="flex-1">
+                  <h2 className="section-title">Tuleje mokre</h2>
+                  <p className="content-text">
+                    Oferujemy grubościenne tuleje cylindrowe mokre o średnicach wewnętrznych 
+                    od 60 do 137 mm. Produkty przeznaczone dla wszystkich typów silników 
+                    spalinowych i maszyn. Dostępne zamówienia indywidualne według wymagań klienta.
+                  </p>
+                </div>
+                <div className="w-full lg:w-96 h-80 bg-white rounded-lg p-8 flex items-center justify-center border border-gray-200 shadow-md">
+                  <div className="relative w-full max-w-[300px] h-[250px] bg-white">
+                    <Image
+                      src="/photo/tuleja mokra.png"
+                      alt="Tuleje mokre"
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 1024px) 100vw, 300px"
+                    />
+                  </div>
+                </div>
               </div>
-              <div className="w-full lg:w-80 h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                <span className="text-gray-500">Zdjęcie gniazd zaworowych</span>
+            </section>
+
+            <section id="gniazda-zaworowe" className="bg-white rounded-xl shadow-lg p-6 lg:p-8">
+              <div className="flex flex-col lg:flex-row gap-8 items-center">
+                <div className="flex-1">
+                  <h2 className="section-title">Gniazda zaworowe</h2>
+                  <p className="content-text">
+                    Produkujemy gniazda zaworowe w trzech wersjach:
+                  </p>
+                  <ul className="list-disc list-inside mt-4 space-y-2 content-text">
+                    <li><strong>Dla silników benzynowych:</strong> wykonane ze specjalnego żeliwa odpornego na wysokie temperatury</li>
+                    <li><strong>Dla silników benzynowo-gazowych:</strong> wykonane ze specjalnie opracowanego żeliwa dla cięższych warunków pracy</li>
+                    <li><strong>Dla silników wysokoprężnych:</strong> wykonane ze specjalnego żeliwa dla szczególnie trudnych warunków</li>
+                  </ul>
+                  <p className="content-text mt-4">
+                    Gniazda zaworowe produkowane są dla wszystkich typów silników. 
+                    Realizujemy zamówienia indywidualne.
+                  </p>
+                </div>
+                <div className="w-full lg:w-96 h-80 bg-white rounded-lg p-8 flex items-center justify-center border border-gray-200 shadow-md">
+                  <div className="relative w-full max-w-[300px] h-[250px] bg-white">
+                    <Image
+                      src="/photo/gniazda zaworowe.png"
+                      alt="Gniazda zaworowe"
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 1024px) 100vw, 300px"
+                    />
+                  </div>
+                </div>
               </div>
             </section>
           </div>
