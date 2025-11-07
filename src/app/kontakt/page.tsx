@@ -16,11 +16,11 @@ export default function Kontakt() {
           <h1 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6">Kontakt</h1>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-1">
-              <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="lg:col-span-1 flex">
+              <div className="bg-white rounded-xl shadow-lg p-6 w-full flex flex-col">
                 <h2 className="section-title">Kontakt</h2>
                 
-                <div className="space-y-4">
+                <div className="space-y-4 flex-grow">
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
                       <span className="text-blue-600 font-bold">📞</span>
@@ -56,8 +56,8 @@ export default function Kontakt() {
               </div>
             </div>
 
-            <div className="lg:col-span-2">
-              <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="lg:col-span-2 flex">
+              <div className="bg-white rounded-xl shadow-lg p-6 w-full">
                 <h2 className="section-title">Wyślij wiadomość</h2>
                 <ContactForm />
               </div>

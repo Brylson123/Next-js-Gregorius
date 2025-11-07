@@ -6,10 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "remove-bg": "node scripts/remove-background.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "axios": "^1.7.9",
+    "form-data": "^4.0.1",
     "next": "15.5.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",

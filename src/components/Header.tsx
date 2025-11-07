@@ -10,11 +10,7 @@ export default function Header() {
           <h1 className="text-3xl lg:text-4xl font-bold mb-3 lg:mb-4">GREGORIUS</h1>
           <div className="text-sm lg:text-base space-y-1">
             <p className="font-medium">os. Na Wzgórzach 22, 31-723 Kraków</p>
-            <p className="text-blue-100">
-              <span className="hidden sm:inline">tel. 012 645 13 61, tel/fax. 012 640 56 50</span>
-              <span className="sm:hidden">tel. 012 645 13 61</span>
-            </p>
-            <p className="sm:hidden text-blue-100">tel/fax. 012 640 56 50</p>
+            <p className="text-blue-100">tel. 012 645 13 61</p>
           </div>
         </div>
       </div>
