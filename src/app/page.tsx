@@ -43,9 +43,7 @@ export default function Home() {
               <h2 className="text-xl lg:text-2xl font-bold text-gray-800 mb-4">Tradycja</h2>
               <p className="text-gray-700 leading-relaxed">
                 Historia naszej firmy sięga lat 60. XX wieku, kiedy to rozpoczęliśmy działalność 
-                jako warsztat szlifowania cylindrów i naprawy wałów korbowych. Z czasem 
-                przekształciliśmy się w nowoczesne przedsiębiorstwo produkcyjne, zachowując 
-                przy tym wieloletnie doświadczenie i tradycje rzemieślnicze.
+                jako warsztat szlifowania cylindrów i wałów korbowych.
               </p>
             </section>
 
@@ -54,7 +52,7 @@ export default function Home() {
               <p className="text-gray-700 leading-relaxed">
                 W 2004 roku przeprowadziliśmy znaczącą restrukturyzację, inwestując w jakość 
                 i efektywność produkcji. Dzięki temu znacznie rozszerzyliśmy bazę klientów 
-                w Polsce i przygotowujemy się do ekspansji na rynki międzynarodowe.
+                w Polsce i za granicą.
               </p>
             </section>
 

@@ -54,7 +54,7 @@ export default function Technologia() {
               <div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">4. Pakowanie</h3>
                 <p className="content-text">
-                  Wyroby pakowane są w papier antykorozyjny firmy Fuchs oraz kartonowe pudełka. 
+                  Wyroby pakowane są w kartonowe pudełka. 
                   Opakowania zbiorcze dostosowane są do indywidualnych wymagań klienta.
                 </p>
               </div>
@@ -63,9 +63,7 @@ export default function Technologia() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">5. Wysyłka</h3>
                 <p className="content-text">
                   Zamówione wyroby wysyłane są do klientów zgodnie z indywidualnymi ustaleniami: 
-                  kurierem, pocztą lub transportem własnym. Czas realizacji zamówienia został 
-                  skrócony do 24 godzin od złożenia zamówienia, pod warunkiem złożenia zamówienia 
-                  do godziny 12:00 dnia poprzedniego.
+                  kurierem, pocztą lub transportem własnym.
                 </p>
               </div>
             </div>
