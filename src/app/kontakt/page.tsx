@@ -18,8 +18,6 @@ export default function Kontakt() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-1 flex">
               <div className="bg-white rounded-xl shadow-lg p-6 w-full flex flex-col">
-            <div className="lg:col-span-1 flex">
-              <div className="bg-white rounded-xl shadow-lg p-6 w-full flex flex-col">
                 <h2 className="section-title">Kontakt</h2>
                 
                 <div className="space-y-4 flex-grow">
@@ -48,8 +46,6 @@ export default function Kontakt() {
               </div>
             </div>
 
-            <div className="lg:col-span-2 flex">
-              <div className="bg-white rounded-xl shadow-lg p-6 w-full">
             <div className="lg:col-span-2 flex">
               <div className="bg-white rounded-xl shadow-lg p-6 w-full">
                 <h2 className="section-title">Wyślij wiadomość</h2>

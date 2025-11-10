@@ -6,6 +6,7 @@ import { useState } from 'react'
 const navigationItems = [
   { href: '/', label: 'O firmie' },
   { href: '/produkty', label: 'Produkty' },
+  { href: '/uslugi', label: 'Usługi' },
   { href: '/technologia', label: 'Technologia' },
   { href: '/kontakt', label: 'Kontakt' },
 ]

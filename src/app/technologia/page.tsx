@@ -27,9 +27,8 @@ export default function Technologia() {
               <div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">1. Materiały</h3>
                 <p className="content-text">
-                  Materiały pochodzą od renomowanych dostawców z długimi tradycjami na krajowym 
-                  rynku motoryzacyjnym. Odlewy żeliwne do tulei cylindrowych, gniazd zaworowych 
-                  i prowadnic zaworowych produkowane są zgodnie z odpowiednimi normami branżowymi.
+                  Materiały pochodzą od firmy MAHLE Polska z Krotoszyna. Odlewy żeliwne do tulei cylindrowych, gniazd zaworowych 
+                  produkowane są zgodnie z odpowiednimi normami branżowymi.
                 </p>
               </div>
 

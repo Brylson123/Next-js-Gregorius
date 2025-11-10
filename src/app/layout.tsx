@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'GREGORIUS - Producent tulei cylindrowych i gniazd zaworowych',
-  description: 'GREGORIUS - uznany producent części zamiennych do silników spalinowych. Specjalizujemy się w tulejach cylindrowych, gniazdach zaworowych i prowadnicach zaworowych.',
+  description: 'GREGORIUS - uznany producent części zamiennych do silników spalinowych. Specjalizujemy się w tulejach cylindrowych i gniazdach zaworowych.',
   keywords: 'tuleje cylindrowe, gniazda zaworowe, części zamienne, silniki spalinowe, GREGORIUS',
 }
 

@@ -37,8 +37,7 @@ export default function Produkty() {
           <div className="mb-8">
             <p className="content-text text-lg">
               GREGORIUS to uznany producent części zamiennych do silników spalinowych, 
-              specjalizujący się w wysokiej jakości tulejach cylindrowych, gniazdach zaworowych 
-              i prowadnicach zaworowych.
+              specjalizujący się w wysokiej jakości tulejach cylindrowych i gniazdach zaworowych.
             </p>
           </div>
 
