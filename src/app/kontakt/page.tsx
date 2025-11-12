@@ -29,8 +29,17 @@ export default function Kontakt() {
                       <p className="font-semibold text-gray-800">Telefon</p>
                       <p className="text-gray-600">501 271 070</p>
                     </div>
+      
                   </div>
-                  
+                  <div className="flex items-center space-x-3">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span className="text-blue-600 font-bold">📞</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">Telefon stacjonarny</p>
+                      <p className="text-gray-600">+48 12 645 13 61</p>
+                    </div>  
+                  </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
                       <span className="text-blue-600 font-bold">✉️</span>

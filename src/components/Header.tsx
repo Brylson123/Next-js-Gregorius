@@ -11,6 +11,7 @@ export default function Header() {
           <div className="text-sm lg:text-base space-y-1">
             <p className="font-medium">os. Na Wzgórzach 22, 31-723 Kraków</p>
             <p className="text-blue-100">tel. 501 271 070</p>
+            <p className="text-blue-100">tel. stacjonarny +48 12 645 13 61</p>
             <p className="text-blue-100">
               <a href="mailto:biuro@gregorius.pl" className="hover:text-white transition-colors">
                 biuro@gregorius.pl

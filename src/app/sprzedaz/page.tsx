@@ -23,7 +23,7 @@ export default function Sprzedaz() {
             <section id="handel" className="bg-white rounded-lg shadow-md p-6 lg:p-8">
               <h2 className="text-xl lg:text-2xl font-bold text-gray-800 mb-4">Handel</h2>
               <p className="text-gray-700 leading-relaxed">
-                Prowadzimy sprzedaż odlewów na tuleje i gniazda zaworowe w postaci rur, odlewów na pojedyncze tuleje oraz wałków, wyroby MAHLE Polska.
+                Prowadzimy sprzedaż odlewów na tuleje i gniazda w postaci rur, odlewów do pojedynczych tulei oraz wałków.
               </p>
             </section>
 

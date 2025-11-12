@@ -24,7 +24,7 @@ export default function Home() {
               <h2 className="text-xl lg:text-2xl font-bold text-gray-800 mb-4">Kim jesteśmy?</h2>
               <p className="text-gray-700 leading-relaxed">
                 GREGORIUS to uznany producent części zamiennych do silników spalinowych, 
-                specjalizujący się w produkcji tulei cylindrowych. Nasza firma od lat 
+                specjalizujący się w produkcji tulei cylindrowych i gniazd zaworowych. Nasza firma od lat 
                 dostarcza wysokiej jakości produkty, dostosowane do indywidualnych potrzeb klientów.
               </p>
             </section>
