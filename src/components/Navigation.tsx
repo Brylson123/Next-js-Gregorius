@@ -2,17 +2,22 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-
-const navigationItems = [
-  { href: '/', label: 'O firmie' },
-  { href: '/produkty', label: 'Produkty' },
-  { href: '/uslugi', label: 'Usługi' },
-  { href: '/technologia', label: 'Technologia' },
-  { href: '/kontakt', label: 'Kontakt' },
-]
+import { useTranslations, useLocale } from 'next-intl'
+import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
+  const t = useTranslations('nav')
+  const tCommon = useTranslations('common')
+  const locale = useLocale()
+
+  const navigationItems = [
+    { href: `/${locale}`, label: t('about') },
+    { href: `/${locale}/produkty`, label: t('products') },
+    { href: `/${locale}/uslugi`, label: t('services') },
+    { href: `/${locale}/technologia`, label: t('technology') },
+    { href: `/${locale}/kontakt`, label: t('contact') },
+  ]
 
   return (
     <>
@@ -41,7 +46,7 @@ export default function Navigation() {
         ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
       `}>
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-white text-xl font-bold">Menu</h2>
+          <h2 className="text-white text-xl font-bold">{tCommon('menu')}</h2>
           <button
             onClick={() => setIsOpen(false)}
             className="lg:hidden text-white hover:text-blue-200"
@@ -68,10 +73,13 @@ export default function Navigation() {
           })}
         </ul>
 
-        <div className="mt-8 pt-6 border-t border-blue-500">
+        <div className="mt-8 pt-6 border-t border-blue-500 space-y-4">
           <div className="text-blue-100 text-sm">
-            <p className="font-semibold">GREGORIUS</p>
-            <p className="text-xs mt-1">Producent części zamiennych</p>
+            <p className="font-semibold">{tCommon('companyName')}</p>
+            <p className="text-xs mt-1">{tCommon('producer')}</p>
+          </div>
+          <div className="pt-4">
+            <LanguageSwitcher />
           </div>
         </div>
       </nav>

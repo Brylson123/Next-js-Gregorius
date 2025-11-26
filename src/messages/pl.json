@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "about": "O firmie",
+    "products": "Produkty",
+    "services": "Usługi",
+    "technology": "Technologia",
+    "contact": "Kontakt"
+  },
+  "header": {
+    "address": "os. Na Wzgórzach 22, 31-723 Kraków",
+    "phone": "tel. 501 271 070",
+    "phoneStationary": "tel. stacjonarny +48 12 645 13 61"
+  },
+  "home": {
+    "title": "Informacje o firmie",
+    "sections": {
+      "ourGoal": "Nasz cel",
+      "tradition": "Tradycja",
+      "development": "Rozwój",
+      "nip": "NIP"
+    },
+    "whoWeAre": {
+      "title": "Kim jesteśmy?",
+      "content": "GREGORIUS to uznany producent części zamiennych do silników spalinowych, specjalizujący się w produkcji tulei cylindrowych i gniazd zaworowych. Nasza firma od lat dostarcza wysokiej jakości produkty, dostosowane do indywidualnych potrzeb klientów."
+    },
+    "ourGoal": {
+      "title": "Nasz cel",
+      "content": "Naszym głównym celem jest dostarczanie produktów najwyższej jakości, ciągła modernizacja procesów produkcyjnych oraz dbałość o środowisko naturalne. Dążymy do zaspokojenia potrzeb naszych klientów poprzez innowacyjne rozwiązania i profesjonalne podejście do każdego zlecenia."
+    },
+    "tradition": {
+      "title": "Tradycja",
+      "content": "Historia naszej firmy sięga lat 60. XX wieku, kiedy to rozpoczęliśmy działalność jako warsztat szlifowania cylindrów i wałów korbowych."
+    },
+    "development": {
+      "title": "Rozwój",
+      "content": "W 2004 roku przeprowadziliśmy znaczącą restrukturyzację, inwestując w jakość i efektywność produkcji. Dzięki temu znacznie rozszerzyliśmy bazę klientów w Polsce i za granicą."
+    },
+    "nip": {
+      "title": "Nr NIP",
+      "value": "753-110-10-80"
+    },
+    "backToTop": "↑ Na początek"
+  },
+  "products": {
+    "title": "Produkty",
+    "sections": {
+      "dryLiners": "Tuleje suche",
+      "wetLiners": "Tuleje mokre",
+      "valveSeats": "Gniazda zaworowe"
+    },
+    "intro": "GREGORIUS to uznany producent części zamiennych do silników spalinowych, specjalizujący się w wysokiej jakości tulejach cylindrowych i gniazdach zaworowych.",
+    "dryLiners": {
+      "title": "Tuleje suche",
+      "content": "Produkujemy cienkościenne tuleje cylindrowe suche o średnicach wewnętrznych do 240 mm. Nasze produkty przeznaczone są dla wszystkich typów silników spalinowych, sprężarek i kosiarek. Realizujemy również zamówienia indywidualne według specyfikacji klienta."
+    },
+    "wetLiners": {
+      "title": "Tuleje mokre",
+      "content": "Oferujemy grubościenne tuleje cylindrowe mokre o średnicach wewnętrznych do 240 mm. Produkty przeznaczone dla wszystkich typów silników spalinowych i maszyn. Dostępne zamówienia indywidualne według wymagań klienta."
+    },
+    "valveSeats": {
+      "title": "Gniazda zaworowe",
+      "intro": "Produkujemy gniazda zaworowe w trzech wersjach:",
+      "gasoline": "Dla silników benzynowych: wykonane ze specjalnego żeliwa odpornego na wysokie temperatury",
+      "gasolineLpg": "Dla silników benzynowo-gazowych: wykonane ze specjalnie opracowanego żeliwa dla cięższych warunków pracy",
+      "diesel": "Dla silników wysokoprężnych: wykonane ze specjalnego żeliwa dla szczególnie trudnych warunków",
+      "content": "Gniazda zaworowe produkowane są dla wszystkich typów silników. Realizujemy zamówienia indywidualne."
+    },
+    "backToTop": "↑ Na początek"
+  },
+  "services": {
+    "title": "Usługi",
+    "sections": {
+      "trade": "Handel",
+      "regeneration": "Regeneracja",
+      "honing": "Honowanie tuleji",
+      "production": "Produkcja"
+    },
+    "trade": {
+      "title": "Handel",
+      "content": "Prowadzimy sprzedaż odlewów na tuleje i gniazda zaworowe w postaci rur, odlewów na pojedyncze tuleje oraz wałków, wyroby MAHLE Polska."
+    },
+    "regeneration": {
+      "title": "Regeneracja",
+      "content": "Oferujemy usługi regeneracji cylindrów."
+    },
+    "honing": {
+      "title": "Honowanie tulei",
+      "content": "Wykonujemy honowanie tulei cylindrowych."
+    },
+    "production": {
+      "title": "Produkcja",
+      "content": "Na indywidualne zamówienia wykonujemy detale z żeliwa, stali oraz metali kolorowych według wymagań klienta."
+    },
+    "backToTop": "↑ Na początek"
+  },
+  "technology": {
+    "title": "Technologia i warunki wykonania",
+    "intro": "GREGORIUS produkuje swoje wyroby według wypracowanej technologii dostosowanej do wymogów technicznych dotyczących części zamiennych dla silników spalinowych oraz wysokich wymagań swoich odbiorców.",
+    "conditions": {
+      "title": "Warunki wykonania:",
+      "materials": {
+        "title": "1. Materiały",
+        "content": "Materiały pochodzą od firmy MAHLE Polska z Krotoszyna. Odlewy żeliwne do tulei cylindrowych, gniazd zaworowych produkowane są zgodnie z odpowiednimi normami branżowymi."
+      },
+      "processing": {
+        "title": "2. Obróbka",
+        "content": "Tuleje cylindrowe i pozostałe wyroby poddawane są obróbce cieplnej w celu poprawy właściwości mechanicznych. Produkcja wykorzystuje szeroką gamę obrabiarek - od tokarek uniwersalnych po specjalistyczne automaty klasy LSP oraz ultranowoczesne obrabiarki CNC firmy GILDEMEISTER. Ostateczną precyzję uzyskujemy poprzez szlifowanie na szlifierkach do wałków."
+      },
+      "conservation": {
+        "title": "3. Konserwacja",
+        "content": "Wszystkie wyroby konserwowane są środkami antykorozyjnymi firmy Fuchs."
+      },
+      "packaging": {
+        "title": "4. Pakowanie",
+        "content": "Wyroby pakowane są w kartonowe pudełka. Opakowania zbiorcze dostosowane są do indywidualnych wymagań klienta."
+      },
+      "shipping": {
+        "title": "5. Wysyłka",
+        "content": "Zamówione wyroby wysyłane są do klientów zgodnie z indywidualnymi ustaleniami: kurierem, pocztą lub transportem własnym."
+      }
+    },
+    "backToTop": "↑ Na początek"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "contact": "Kontakt",
+    "phone": "Telefon",
+    "phoneStationary": "Telefon stacjonarny",
+    "email": "Email",
+    "sendMessage": "Wyślij wiadomość",
+    "location": "Lokalizacja",
+    "address": "Adres",
+    "form": {
+      "name": "Imię",
+      "email": "Email",
+      "message": "Wiadomość",
+      "messagePlaceholder": "Treść twojej wiadomości",
+      "sending": "Wysyłanie",
+      "send": "Wyślij",
+      "success": "Wysłano maila!",
+      "error": "Wiadomość nie została wysłana"
+    },
+    "backToTop": "↑ Na początek"
+  },
+  "common": {
+    "menu": "Menu",
+    "companyName": "GREGORIUS",
+    "producer": "Producent części zamiennych"
+  }
+}
+
