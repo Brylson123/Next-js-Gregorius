@@ -7,7 +7,8 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string }>
 }) {
-  const t = await getTranslations({ namespace: 'home' })
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'home' })
 
   return {
     title: 'GREGORIUS - Producent tulei cylindrowych i gniazd zaworowych',
