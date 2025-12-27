@@ -12,7 +12,6 @@ const ContactForm = () => {
         message: "",
     });
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState("");
     const changeHandler = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const {value, name} = e.target;
         setForm({...form, [name]: value});
@@ -21,11 +20,9 @@ const ContactForm = () => {
         e.preventDefault();
 
         if (!form.name || !form.email || !form.message) {
-            setError("validation-error");
+            toast.error(t('validationError'));
             return;
         }
-
-        setError("");
         setLoading(true);
 
         emailjs

@@ -2,22 +2,20 @@ import { getRequestConfig } from 'next-intl/server'
 import { locales, defaultLocale, type Locale } from './config'
 
 export default getRequestConfig(async ({ locale, requestLocale }) => {
-  // Handle locale - it might be a Promise in Next.js 15
   let resolvedLocale: string | undefined
   
-  if (locale instanceof Promise) {
-    resolvedLocale = await locale
+  if (locale && typeof locale === 'object' && 'then' in locale && typeof (locale as any).then === 'function') {
+    resolvedLocale = await (locale as Promise<string>)
   } else if (typeof locale === 'string') {
     resolvedLocale = locale
-  } else if (requestLocale instanceof Promise) {
-    resolvedLocale = await requestLocale
+  } else if (requestLocale && typeof requestLocale === 'object' && 'then' in requestLocale && typeof (requestLocale as any).then === 'function') {
+    resolvedLocale = await (requestLocale as Promise<string>)
   } else if (typeof requestLocale === 'string') {
     resolvedLocale = requestLocale
   } else {
     resolvedLocale = defaultLocale
   }
   
-  // Ensure locale is valid
   const validLocales: string[] = [...locales]
   
   if (!resolvedLocale || !validLocales.includes(resolvedLocale)) {
@@ -33,7 +31,6 @@ export default getRequestConfig(async ({ locale, requestLocale }) => {
     }
   } catch (error) {
     console.error(`Error loading messages for locale ${resolvedLocale}:`, error)
-    // Fallback to default locale
     const fallbackMessages = (await import(`../messages/${defaultLocale}.json`)).default
     return {
       locale: defaultLocale as Locale,

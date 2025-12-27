@@ -7,7 +7,7 @@ export default async function Uslugi({
 }: {
   params: Promise<{ locale: string }>
 }) {
-  const { locale } = await params
+  await params
   const t = await getTranslations()
 
   return (
