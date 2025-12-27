@@ -13,7 +13,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
-  const { locale } = await params
+  await params
 
   return {
     title: 'GREGORIUS - Producent tulei cylindrowych i gniazd zaworowych',

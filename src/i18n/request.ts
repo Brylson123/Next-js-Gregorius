@@ -1,15 +1,28 @@
 import { getRequestConfig } from 'next-intl/server'
 import { locales, defaultLocale, type Locale } from './config'
 
+type Thenable<T> = {
+  then: (onfulfilled?: (value: T) => T | PromiseLike<T>) => Promise<T>
+}
+
+function isThenable<T>(value: unknown): value is Thenable<T> {
+  return (
+    value !== null &&
+    typeof value === 'object' &&
+    'then' in value &&
+    typeof (value as Thenable<T>).then === 'function'
+  )
+}
+
 export default getRequestConfig(async ({ locale, requestLocale }) => {
   let resolvedLocale: string | undefined
   
-  if (locale && typeof locale === 'object' && 'then' in locale && typeof (locale as any).then === 'function') {
-    resolvedLocale = await (locale as Promise<string>)
+  if (locale && isThenable<string>(locale)) {
+    resolvedLocale = await Promise.resolve(locale)
   } else if (typeof locale === 'string') {
     resolvedLocale = locale
-  } else if (requestLocale && typeof requestLocale === 'object' && 'then' in requestLocale && typeof (requestLocale as any).then === 'function') {
-    resolvedLocale = await (requestLocale as Promise<string>)
+  } else if (requestLocale && isThenable<string>(requestLocale)) {
+    resolvedLocale = await Promise.resolve(requestLocale)
   } else if (typeof requestLocale === 'string') {
     resolvedLocale = requestLocale
   } else {

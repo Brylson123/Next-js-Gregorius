@@ -1,14 +1,15 @@
 import Header from '@/components/Header'
 import Navigation from '@/components/Navigation'
 import { getTranslations } from 'next-intl/server'
+import type { Metadata } from 'next'
 
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>
-}) {
+}): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'home' })
+  await getTranslations({ locale, namespace: 'home' })
 
   return {
     title: 'GREGORIUS - Producent tulei cylindrowych i gniazd zaworowych',

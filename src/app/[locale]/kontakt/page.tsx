@@ -10,7 +10,7 @@ export default async function Kontakt({
 }: {
   params: Promise<{ locale: string }>
 }) {
-  const { locale } = await params
+  await params
   const t = await getTranslations()
 
   return (
