@@ -13,6 +13,51 @@
   },
   "home": {
     "title": "Informacje o firmie",
+    "hero": {
+      "badge": "Polski producent od ponad 60 lat",
+      "title": "Tuleje cylindrowe i gniazda zaworowe z precyzją mierzoną w mikronach",
+      "subtitle": "Od warsztatu szlifierskiego z lat 60. po nowoczesny park maszynowy CNC. Produkujemy części zamienne do silników spalinowych, które trzymają tolerancje i pracują przez lata — dla klientów w Polsce i za granicą.",
+      "ctaPrimary": "Zobacz produkty",
+      "ctaSecondary": "Zapytaj o wycenę"
+    },
+    "stats": {
+      "yearsValue": "60+",
+      "yearsLabel": "lat doświadczenia",
+      "diameterValue": "240 mm",
+      "diameterLabel": "maks. średnica wewnętrzna",
+      "seatsValue": "3",
+      "seatsLabel": "typy gniazd zaworowych",
+      "marketsValue": "PL + Eksport",
+      "marketsLabel": "obsługiwane rynki"
+    },
+    "features": {
+      "eyebrow": "Dlaczego GREGORIUS",
+      "title": "Doświadczenie, które czuć w każdym detalu",
+      "materials": {
+        "title": "Sprawdzone materiały",
+        "content": "Odlewy żeliwne od MAHLE Polska oraz obróbka cieplna zapewniają powtarzalną twardość i trwałość każdej partii."
+      },
+      "precision": {
+        "title": "Precyzja CNC",
+        "content": "Obrabiarki GILDEMEISTER i szlifowanie wykończeniowe pozwalają utrzymać ścisłe tolerancje wymiarowe."
+      },
+      "custom": {
+        "title": "Realizacje indywidualne",
+        "content": "Wykonujemy detale z żeliwa, stali i metali kolorowych dokładnie według Twojej specyfikacji."
+      },
+      "tradition": {
+        "title": "Tradycja od lat 60.",
+        "content": "Ponad pół wieku ciągłej produkcji części do silników spalinowych dla wymagających odbiorców."
+      }
+    },
+    "partners": {
+      "eyebrow": "Materiały i technologia",
+      "title": "Pracujemy na sprawdzonych markach",
+      "subtitle": "Korzystamy z materiałów i rozwiązań renomowanych dostawców — to gwarancja powtarzalnej jakości każdej partii.",
+      "mahle": "odlewy i materiały",
+      "fuchs": "konserwacja antykorozyjna",
+      "gildemeister": "obrabiarki CNC"
+    },
     "sections": {
       "ourGoal": "Nasz cel",
       "tradition": "Tradycja",
@@ -21,19 +66,19 @@
     },
     "whoWeAre": {
       "title": "Kim jesteśmy?",
-      "content": "GREGORIUS to uznany producent części zamiennych do silników spalinowych, specjalizujący się w produkcji tulei cylindrowych i gniazd zaworowych. Nasza firma od lat dostarcza wysokiej jakości produkty, dostosowane do indywidualnych potrzeb klientów."
+      "content": "GREGORIUS to uznany producent części zamiennych do silników spalinowych, specjalizujący się w tulejach cylindrowych i gniazdach zaworowych. Od dekad dostarczamy produkty wysokiej jakości, dopasowane do indywidualnych potrzeb klientów — od pojedynczych sztuk po serie produkcyjne."
     },
     "ourGoal": {
       "title": "Nasz cel",
-      "content": "Naszym głównym celem jest dostarczanie produktów najwyższej jakości, ciągła modernizacja procesów produkcyjnych oraz dbałość o środowisko naturalne. Dążymy do zaspokojenia potrzeb naszych klientów poprzez innowacyjne rozwiązania i profesjonalne podejście do każdego zlecenia."
+      "content": "Dostarczamy produkty najwyższej jakości, nieustannie modernizujemy procesy produkcyjne i dbamy o środowisko. Każde zlecenie traktujemy indywidualnie, łącząc inżynierską precyzję z partnerskim podejściem do klienta."
     },
     "tradition": {
       "title": "Tradycja",
-      "content": "Historia naszej firmy sięga lat 60. XX wieku, kiedy to rozpoczęliśmy działalność jako warsztat szlifowania cylindrów i wałów korbowych."
+      "content": "Nasza historia sięga lat 60. XX wieku, gdy rozpoczęliśmy działalność jako warsztat szlifowania cylindrów i wałów korbowych. To tam zdobyliśmy fundament wiedzy, na którym budujemy do dziś."
     },
     "development": {
       "title": "Rozwój",
-      "content": "W 2004 roku przeprowadziliśmy znaczącą restrukturyzację, inwestując w jakość i efektywność produkcji. Dzięki temu znacznie rozszerzyliśmy bazę klientów w Polsce i za granicą."
+      "content": "W 2004 roku przeprowadziliśmy gruntowną restrukturyzację, inwestując w jakość i efektywność produkcji. Dzięki temu znacząco rozszerzyliśmy bazę klientów w Polsce i za granicą — i wciąż się rozwijamy."
     },
     "nip": {
       "title": "Nr NIP",
@@ -43,32 +88,35 @@
   },
   "products": {
     "title": "Produkty",
+    "eyebrow": "Nasza oferta",
     "sections": {
       "dryLiners": "Tuleje suche",
       "wetLiners": "Tuleje mokre",
       "valveSeats": "Gniazda zaworowe"
     },
-    "intro": "GREGORIUS to uznany producent części zamiennych do silników spalinowych, specjalizujący się w wysokiej jakości tulejach cylindrowych i gniazdach zaworowych.",
+    "intro": "GREGORIUS to uznany producent części zamiennych do silników spalinowych, specjalizujący się w wysokiej jakości tulejach cylindrowych i gniazdach zaworowych. Poniżej znajdziesz nasze główne grupy produktów.",
     "dryLiners": {
       "title": "Tuleje suche",
-      "content": "Produkujemy cienkościenne tuleje cylindrowe suche o średnicach wewnętrznych do 240 mm. Nasze produkty przeznaczone są dla wszystkich typów silników spalinowych, sprężarek i kosiarek. Realizujemy również zamówienia indywidualne według specyfikacji klienta."
+      "content": "Produkujemy cienkościenne tuleje cylindrowe suche o średnicach wewnętrznych do 240 mm. Sprawdzają się we wszystkich typach silników spalinowych, sprężarkach i kosiarkach. Realizujemy również zamówienia indywidualne według specyfikacji klienta."
     },
     "wetLiners": {
       "title": "Tuleje mokre",
-      "content": "Oferujemy grubościenne tuleje cylindrowe mokre o średnicach wewnętrznych do 240 mm. Produkty przeznaczone dla wszystkich typów silników spalinowych i maszyn. Dostępne zamówienia indywidualne według wymagań klienta."
+      "content": "Oferujemy grubościenne tuleje cylindrowe mokre o średnicach wewnętrznych do 240 mm, przeznaczone do wszystkich typów silników spalinowych i maszyn. Dostępne także na zamówienie, według wymagań klienta."
     },
     "valveSeats": {
       "title": "Gniazda zaworowe",
-      "intro": "Produkujemy gniazda zaworowe w trzech wersjach:",
-      "gasoline": "Dla silników benzynowych: wykonane ze specjalnego żeliwa odpornego na wysokie temperatury",
-      "gasolineLpg": "Dla silników benzynowo-gazowych: wykonane ze specjalnie opracowanego żeliwa dla cięższych warunków pracy",
-      "diesel": "Dla silników wysokoprężnych: wykonane ze specjalnego żeliwa dla szczególnie trudnych warunków",
-      "content": "Gniazda zaworowe produkowane są dla wszystkich typów silników. Realizujemy zamówienia indywidualne."
+      "intro": "Produkujemy gniazda zaworowe w trzech wersjach, dobranych do warunków pracy silnika:",
+      "gasoline": "Silniki benzynowe — ze specjalnego żeliwa odpornego na wysokie temperatury",
+      "gasolineLpg": "Silniki benzynowo-gazowe — z żeliwa opracowanego do cięższych warunków pracy",
+      "diesel": "Silniki wysokoprężne — z żeliwa do szczególnie trudnych warunków eksploatacji",
+      "content": "Gniazda zaworowe produkujemy dla wszystkich typów silników. Realizujemy także zamówienia indywidualne."
     },
     "backToTop": "↑ Na początek"
   },
   "services": {
     "title": "Usługi",
+    "eyebrow": "Co możemy dla Ciebie zrobić",
+    "intro": "Poza produkcją oferujemy pełne wsparcie warsztatowe — od handlu odlewami po regenerację i obróbkę wykończeniową.",
     "sections": {
       "trade": "Handel",
       "regeneration": "Regeneracja",
@@ -77,53 +125,56 @@
     },
     "trade": {
       "title": "Handel",
-      "content": "Prowadzimy sprzedaż odlewów na tuleje i gniazda zaworowe w postaci rur, odlewów na pojedyncze tuleje oraz wałków, wyroby MAHLE Polska."
+      "content": "Prowadzimy sprzedaż odlewów na tuleje i gniazda zaworowe — w postaci rur, odlewów na pojedyncze tuleje oraz wałków. W ofercie również wyroby MAHLE Polska."
     },
     "regeneration": {
       "title": "Regeneracja",
-      "content": "Oferujemy usługi regeneracji cylindrów."
+      "content": "Oferujemy regenerację cylindrów, przywracając im parametry zbliżone do fabrycznych."
     },
     "honing": {
       "title": "Honowanie tulei",
-      "content": "Wykonujemy honowanie tulei cylindrowych."
+      "content": "Wykonujemy honowanie tulei cylindrowych, zapewniając odpowiednią gładkość i geometrię powierzchni roboczej."
     },
     "production": {
-      "title": "Produkcja",
+      "title": "Produkcja na zamówienie",
       "content": "Na indywidualne zamówienia wykonujemy detale z żeliwa, stali oraz metali kolorowych według wymagań klienta."
     },
     "backToTop": "↑ Na początek"
   },
   "technology": {
     "title": "Technologia i warunki wykonania",
-    "intro": "GREGORIUS produkuje swoje wyroby według wypracowanej technologii dostosowanej do wymogów technicznych dotyczących części zamiennych dla silników spalinowych oraz wysokich wymagań swoich odbiorców.",
+    "eyebrow": "Jak powstają nasze wyroby",
+    "intro": "GREGORIUS produkuje swoje wyroby według wypracowanej technologii, dostosowanej do wymogów technicznych części zamiennych dla silników spalinowych oraz wysokich oczekiwań naszych odbiorców.",
     "conditions": {
-      "title": "Warunki wykonania:",
+      "title": "Warunki wykonania",
       "materials": {
-        "title": "1. Materiały",
-        "content": "Materiały pochodzą od firmy MAHLE Polska z Krotoszyna. Odlewy żeliwne do tulei cylindrowych, gniazd zaworowych produkowane są zgodnie z odpowiednimi normami branżowymi."
+        "title": "Materiały",
+        "content": "Materiały pochodzą od firmy MAHLE Polska z Krotoszyna. Odlewy żeliwne do tulei cylindrowych i gniazd zaworowych produkujemy zgodnie z odpowiednimi normami branżowymi."
       },
       "processing": {
-        "title": "2. Obróbka",
-        "content": "Tuleje cylindrowe i pozostałe wyroby poddawane są obróbce cieplnej w celu poprawy właściwości mechanicznych. Produkcja wykorzystuje szeroką gamę obrabiarek - od tokarek uniwersalnych po specjalistyczne automaty klasy LSP oraz ultranowoczesne obrabiarki CNC firmy GILDEMEISTER. Ostateczną precyzję uzyskujemy poprzez szlifowanie na szlifierkach do wałków."
+        "title": "Obróbka",
+        "content": "Tuleje cylindrowe i pozostałe wyroby poddajemy obróbce cieplnej, by poprawić ich właściwości mechaniczne. Produkcja korzysta z szerokiej gamy obrabiarek — od tokarek uniwersalnych, przez automaty klasy LSP, po nowoczesne obrabiarki CNC firmy GILDEMEISTER. Ostateczną precyzję uzyskujemy poprzez szlifowanie na szlifierkach do wałków."
       },
       "conservation": {
-        "title": "3. Konserwacja",
-        "content": "Wszystkie wyroby konserwowane są środkami antykorozyjnymi firmy Fuchs."
+        "title": "Konserwacja",
+        "content": "Wszystkie wyroby zabezpieczamy środkami antykorozyjnymi firmy Fuchs."
       },
       "packaging": {
-        "title": "4. Pakowanie",
-        "content": "Wyroby pakowane są w kartonowe pudełka. Opakowania zbiorcze dostosowane są do indywidualnych wymagań klienta."
+        "title": "Pakowanie",
+        "content": "Wyroby pakujemy w kartonowe pudełka. Opakowania zbiorcze dostosowujemy do indywidualnych wymagań klienta."
       },
       "shipping": {
-        "title": "5. Wysyłka",
-        "content": "Zamówione wyroby wysyłane są do klientów zgodnie z indywidualnymi ustaleniami: kurierem, pocztą lub transportem własnym."
+        "title": "Wysyłka",
+        "content": "Zamówione wyroby wysyłamy zgodnie z indywidualnymi ustaleniami: kurierem, pocztą lub transportem własnym."
       }
     },
     "backToTop": "↑ Na początek"
   },
   "contact": {
     "title": "Kontakt",
-    "contact": "Kontakt",
+    "eyebrow": "Porozmawiajmy",
+    "intro": "Masz pytanie o produkt, wycenę lub realizację indywidualną? Napisz lub zadzwoń — odpowiemy szybko i konkretnie.",
+    "contact": "Dane kontaktowe",
     "phone": "Telefon",
     "phoneStationary": "Telefon stacjonarny",
     "email": "Email",
@@ -134,18 +185,18 @@
       "name": "Imię",
       "email": "Email",
       "message": "Wiadomość",
-      "messagePlaceholder": "Treść twojej wiadomości",
+      "messagePlaceholder": "Opisz, czego potrzebujesz — typ silnika, wymiary, ilość…",
       "sending": "Wysyłanie",
-      "send": "Wyślij",
-      "success": "Wysłano maila!",
-      "error": "Wiadomość nie została wysłana"
+      "send": "Wyślij wiadomość",
+      "success": "Wiadomość została wysłana!",
+      "error": "Nie udało się wysłać wiadomości"
     },
     "backToTop": "↑ Na początek"
   },
   "common": {
     "menu": "Menu",
     "companyName": "GREGORIUS",
-    "producer": "Producent części zamiennych"
+    "producer": "Producent części zamiennych",
+    "tagline": "Tuleje cylindrowe i gniazda zaworowe"
   }
 }
-

@@ -1,0 +1,17 @@
+DirectoryIndex index.html
+
+AddType text/plain .txt
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Przekierowanie strony głównej na domyślny język (polski)
+  RewriteRule ^$ /pl/ [R=301,L]
+
+  # Angielskie URL-e (stare polskie slugi -> poprawne angielskie)
+  RewriteRule ^en/produkty/?$ /en/products/ [R=301,L]
+  RewriteRule ^en/uslugi/?$ /en/services/ [R=301,L]
+  RewriteRule ^en/technologia/?$ /en/technology/ [R=301,L]
+  RewriteRule ^en/kontakt/?$ /en/contact/ [R=301,L]
+</IfModule>

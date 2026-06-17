@@ -1,25 +1,24 @@
 'use client'
 
 import { useLocale } from 'next-intl'
-import { useRouter, usePathname } from 'next/navigation'
-import { locales } from '@/i18n/config'
+import { usePathname, getPathname } from '@/i18n/navigation'
+import { routing } from '@/i18n/routing'
 
 export default function LanguageSwitcher() {
   const locale = useLocale()
-  const router = useRouter()
   const pathname = usePathname()
 
   const switchLanguage = (newLocale: string) => {
-    // Remove current locale from pathname and add new locale
-    // pathname from next/navigation includes the locale (e.g., /pl/kontakt)
-    const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/'
-    const newPath = pathWithoutLocale === '/' ? `/${newLocale}` : `/${newLocale}${pathWithoutLocale}`
-    router.push(newPath)
+    const newPath = getPathname({
+      href: pathname,
+      locale: newLocale,
+    })
+    window.location.href = newPath
   }
 
   return (
     <div className="flex items-center gap-2">
-      {locales.map((loc) => (
+      {routing.locales.map((loc) => (
         <button
           key={loc}
           onClick={() => switchLanguage(loc)}
@@ -38,4 +37,3 @@ export default function LanguageSwitcher() {
     </div>
   )
 }
-

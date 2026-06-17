@@ -1,9 +1,14 @@
 import Header from '@/components/Header'
 import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 import GoogleMap from '@/components/GoogleMap'
 import ContactForm from '@/components/ContactForm'
 import { Toaster } from 'react-hot-toast'
 import { getTranslations } from 'next-intl/server'
+
+export function generateStaticParams() {
+  return [{ locale: 'pl' }]
+}
 
 export default async function Kontakt({
   params,
@@ -21,8 +26,11 @@ export default async function Kontakt({
         <Header />
         
         <div className="mt-6 lg:mt-8">
-          <h1 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6">{t('contact.title')}</h1>
-          
+          <span className="eyebrow">{t('contact.eyebrow')}</span>
+          <h1 className="page-heading mt-3">{t('contact.title')}</h1>
+          <span className="accent-bar" />
+          <p className="content-text text-lg mt-4 mb-8 max-w-3xl">{t('contact.intro')}</p>
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-1 flex">
               <div className="bg-white rounded-xl shadow-lg p-6 w-full flex flex-col">
@@ -93,12 +101,11 @@ export default async function Kontakt({
             </div>
           </div>
 
-          <div className="mt-6 lg:mt-8 text-center">
-            <a href="#top" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition-colors duration-200 shadow-md hover:shadow-lg">
-              {t('contact.backToTop')}
-            </a>
+          <div className="mt-10 lg:mt-12 text-center">
+            <a href="#top" className="btn-back-to-top">{t('contact.backToTop')}</a>
           </div>
         </div>
+        <Footer />
       </main>
       <Toaster position="top-right" />
     </div>

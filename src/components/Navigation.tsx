@@ -1,55 +1,89 @@
 'use client'
 
-import Link from 'next/link'
 import { useState } from 'react'
-import { useTranslations, useLocale } from 'next-intl'
+import { useTranslations } from 'next-intl'
+import { Link, usePathname } from '@/i18n/navigation'
 import LanguageSwitcher from './LanguageSwitcher'
+
+const HomeIcon = () => (
+  <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+  </svg>
+)
+
+const ProductsIcon = () => (
+  <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+  </svg>
+)
+
+const ServicesIcon = () => (
+  <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+  </svg>
+)
+
+const TechIcon = () => (
+  <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" />
+  </svg>
+)
+
+const ContactIcon = () => (
+  <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+  </svg>
+)
+
+type NavPathname = '/' | '/produkty' | '/uslugi' | '/technologia' | '/kontakt'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const t = useTranslations('nav')
   const tCommon = useTranslations('common')
-  const locale = useLocale()
+  const pathname = usePathname()
 
-  const navigationItems = [
-    { href: `/${locale}`, label: t('about') },
-    { href: `/${locale}/produkty`, label: t('products') },
-    { href: `/${locale}/uslugi`, label: t('services') },
-    { href: `/${locale}/technologia`, label: t('technology') },
-    { href: `/${locale}/kontakt`, label: t('contact') },
+  const navigationItems: { pathname: NavPathname; label: string; icon: React.ReactNode }[] = [
+    { pathname: '/', label: t('about'), icon: <HomeIcon /> },
+    { pathname: '/produkty', label: t('products'), icon: <ProductsIcon /> },
+    { pathname: '/uslugi', label: t('services'), icon: <ServicesIcon /> },
+    { pathname: '/technologia', label: t('technology'), icon: <TechIcon /> },
+    { pathname: '/kontakt', label: t('contact'), icon: <ContactIcon /> },
   ]
+
+  const isActive = (itemPathname: NavPathname) => pathname === itemPathname
 
   return (
     <>
-      {/* Mobile menu button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="lg:hidden fixed top-4 left-4 z-50 bg-blue-600 text-white p-2 rounded-md shadow-lg"
+        className="lg:hidden fixed top-4 left-4 z-50 bg-slate-700 text-white p-2 rounded-md shadow-lg hover:bg-slate-600 transition-colors"
+        aria-label="Otwórz menu"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
 
-      {/* Mobile overlay */}
       {isOpen && (
-        <div 
+        <div
           className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
           onClick={() => setIsOpen(false)}
         />
       )}
 
-      {/* Navigation */}
       <nav className={`
-        bg-gradient-to-b from-blue-600 to-blue-700 min-h-screen w-64 p-6 shadow-xl
+        bg-gradient-to-b from-slate-700 to-slate-800 min-h-screen w-64 p-6 shadow-xl
         fixed lg:static z-50 transform transition-transform duration-300 ease-in-out
         ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
       `}>
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-white text-xl font-bold">{tCommon('menu')}</h2>
+          <h2 className="text-white text-xl font-bold tracking-wide">{tCommon('menu')}</h2>
           <button
             onClick={() => setIsOpen(false)}
-            className="lg:hidden text-white hover:text-blue-200"
+            className="lg:hidden text-slate-300 hover:text-white transition-colors"
+            aria-label="Zamknij menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -57,15 +91,24 @@ export default function Navigation() {
           </button>
         </div>
 
-        <ul className="space-y-3">
+        <ul className="space-y-1">
           {navigationItems.map((item) => {
+            const active = isActive(item.pathname)
             return (
-              <li key={item.href}>
+              <li key={item.pathname}>
                 <Link
-                  href={item.href}
+                  href={item.pathname}
+                  prefetch={false}
                   onClick={() => setIsOpen(false)}
-                  className="block py-3 px-4 rounded-lg text-white font-medium transition-all duration-200 hover:bg-white hover:bg-opacity-10 hover:transform hover:scale-105"
+                  className={`
+                    flex items-center gap-3 py-2.5 px-4 rounded-lg font-medium transition-all duration-200
+                    ${active
+                      ? 'bg-blue-600 text-white shadow-md border-l-2 border-blue-300'
+                      : 'text-slate-200 hover:bg-white/10 hover:text-white border-l-2 border-transparent'
+                    }
+                  `}
                 >
+                  <span className={active ? 'text-blue-200' : 'text-slate-400'}>{item.icon}</span>
                   {item.label}
                 </Link>
               </li>
@@ -73,12 +116,12 @@ export default function Navigation() {
           })}
         </ul>
 
-        <div className="mt-8 pt-6 border-t border-blue-500 space-y-4">
-          <div className="text-blue-100 text-sm">
-            <p className="font-semibold">{tCommon('companyName')}</p>
-            <p className="text-xs mt-1">{tCommon('producer')}</p>
+        <div className="mt-8 pt-6 border-t border-slate-600 space-y-4">
+          <div className="text-slate-300 text-sm">
+            <p className="font-semibold text-slate-100">{tCommon('companyName')}</p>
+            <p className="text-xs mt-1 text-slate-400">{tCommon('producer')}</p>
           </div>
-          <div className="pt-4">
+          <div className="pt-2">
             <LanguageSwitcher />
           </div>
         </div>
@@ -86,4 +129,3 @@ export default function Navigation() {
     </>
   )
 }
-

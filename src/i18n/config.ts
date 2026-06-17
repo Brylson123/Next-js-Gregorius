@@ -1,5 +1,6 @@
-export const locales = ['pl', 'en'] as const
-export const defaultLocale = 'pl' as const
+import { routing } from './routing'
+
+export const locales = routing.locales
+export const defaultLocale = routing.defaultLocale
 
 export type Locale = (typeof locales)[number]
-

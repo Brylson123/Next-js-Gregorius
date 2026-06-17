@@ -13,6 +13,51 @@
   },
   "home": {
     "title": "Company Information",
+    "hero": {
+      "badge": "A Polish manufacturer for over 60 years",
+      "title": "Cylinder liners and valve seats engineered to micron precision",
+      "subtitle": "From a 1960s grinding workshop to a modern CNC machine park. We manufacture spare parts for internal combustion engines that hold their tolerances and last for years — for customers in Poland and abroad.",
+      "ctaPrimary": "View products",
+      "ctaSecondary": "Request a quote"
+    },
+    "stats": {
+      "yearsValue": "60+",
+      "yearsLabel": "years of experience",
+      "diameterValue": "240 mm",
+      "diameterLabel": "max. internal diameter",
+      "seatsValue": "3",
+      "seatsLabel": "valve seat variants",
+      "marketsValue": "PL + Export",
+      "marketsLabel": "markets served"
+    },
+    "features": {
+      "eyebrow": "Why GREGORIUS",
+      "title": "Experience you can feel in every part",
+      "materials": {
+        "title": "Proven materials",
+        "content": "Cast iron castings from MAHLE Poland and heat treatment deliver repeatable hardness and durability in every batch."
+      },
+      "precision": {
+        "title": "CNC precision",
+        "content": "GILDEMEISTER machine tools and finish grinding let us hold tight dimensional tolerances."
+      },
+      "custom": {
+        "title": "Custom orders",
+        "content": "We make parts from cast iron, steel and non-ferrous metals exactly to your specification."
+      },
+      "tradition": {
+        "title": "Tradition since the 1960s",
+        "content": "Over half a century of continuous production of engine spare parts for demanding customers."
+      }
+    },
+    "partners": {
+      "eyebrow": "Materials & technology",
+      "title": "We work with trusted brands",
+      "subtitle": "We use materials and solutions from reputable suppliers — a guarantee of repeatable quality in every batch.",
+      "mahle": "castings & materials",
+      "fuchs": "anti-corrosion protection",
+      "gildemeister": "CNC machine tools"
+    },
     "sections": {
       "ourGoal": "Our Goal",
       "tradition": "Tradition",
@@ -21,19 +66,19 @@
     },
     "whoWeAre": {
       "title": "Who are we?",
-      "content": "GREGORIUS is a recognized manufacturer of spare parts for internal combustion engines, specializing in the production of cylinder liners and valve seats. Our company has been delivering high-quality products tailored to individual customer needs for years."
+      "content": "GREGORIUS is a recognized manufacturer of spare parts for internal combustion engines, specializing in cylinder liners and valve seats. For decades we have delivered high-quality products tailored to individual customer needs — from single pieces to production runs."
     },
     "ourGoal": {
       "title": "Our Goal",
-      "content": "Our main goal is to deliver products of the highest quality, continuously modernize production processes, and care for the natural environment. We strive to meet our customers' needs through innovative solutions and a professional approach to every order."
+      "content": "We deliver products of the highest quality, continuously modernize our production processes and care for the environment. We treat every order individually, combining engineering precision with a partner-like approach to our customers."
     },
     "tradition": {
       "title": "Tradition",
-      "content": "Our company's history dates back to the 1960s, when we started as a workshop for grinding cylinders and crankshafts."
+      "content": "Our history dates back to the 1960s, when we started as a workshop for grinding cylinders and crankshafts. That is where we built the foundation of know-how we still rely on today."
     },
     "development": {
       "title": "Development",
-      "content": "In 2004, we underwent a significant restructuring, investing in quality and production efficiency. This allowed us to significantly expand our customer base in Poland and abroad."
+      "content": "In 2004 we carried out a thorough restructuring, investing in quality and production efficiency. This allowed us to significantly expand our customer base in Poland and abroad — and we keep growing."
     },
     "nip": {
       "title": "Tax ID Number",
@@ -43,32 +88,35 @@
   },
   "products": {
     "title": "Products",
+    "eyebrow": "Our offer",
     "sections": {
       "dryLiners": "Dry Liners",
       "wetLiners": "Wet Liners",
       "valveSeats": "Valve Seats"
     },
-    "intro": "GREGORIUS is a recognized manufacturer of spare parts for internal combustion engines, specializing in high-quality cylinder liners and valve seats.",
+    "intro": "GREGORIUS is a recognized manufacturer of spare parts for internal combustion engines, specializing in high-quality cylinder liners and valve seats. Below you'll find our main product groups.",
     "dryLiners": {
       "title": "Dry Liners",
-      "content": "We produce thin-walled dry cylinder liners with internal diameters up to 240 mm. Our products are designed for all types of internal combustion engines, compressors, and lawn mowers. We also fulfill individual orders according to customer specifications."
+      "content": "We produce thin-walled dry cylinder liners with internal diameters up to 240 mm. They suit all types of internal combustion engines, compressors and lawn mowers. We also fulfill individual orders to customer specification."
     },
     "wetLiners": {
       "title": "Wet Liners",
-      "content": "We offer thick-walled wet cylinder liners with internal diameters up to 240 mm. Products designed for all types of internal combustion engines and machinery. Individual orders available according to customer requirements."
+      "content": "We offer thick-walled wet cylinder liners with internal diameters up to 240 mm, designed for all types of internal combustion engines and machinery. Also available to order, to customer requirements."
     },
     "valveSeats": {
       "title": "Valve Seats",
-      "intro": "We produce valve seats in three versions:",
-      "gasoline": "For gasoline engines: made of special heat-resistant cast iron",
-      "gasolineLpg": "For gasoline-LPG engines: made of specially developed cast iron for more demanding operating conditions",
-      "diesel": "For diesel engines: made of special cast iron for particularly difficult conditions",
-      "content": "Valve seats are produced for all types of engines. We fulfill individual orders."
+      "intro": "We produce valve seats in three versions, matched to the engine's operating conditions:",
+      "gasoline": "Gasoline engines — special heat-resistant cast iron",
+      "gasolineLpg": "Gasoline-LPG engines — cast iron developed for more demanding operation",
+      "diesel": "Diesel engines — cast iron for particularly tough operating conditions",
+      "content": "We produce valve seats for all types of engines. Individual orders are welcome."
     },
     "backToTop": "↑ Back to top"
   },
   "services": {
     "title": "Services",
+    "eyebrow": "What we can do for you",
+    "intro": "Beyond manufacturing, we offer full workshop support — from trading castings to regeneration and finish machining.",
     "sections": {
       "trade": "Trade",
       "regeneration": "Regeneration",
@@ -77,53 +125,56 @@
     },
     "trade": {
       "title": "Trade",
-      "content": "We sell castings for liners and valve seats in the form of tubes, castings for individual liners, and shafts, MAHLE Poland products."
+      "content": "We sell castings for liners and valve seats — as tubes, castings for individual liners and shafts. We also offer MAHLE Poland products."
     },
     "regeneration": {
       "title": "Regeneration",
-      "content": "We offer cylinder regeneration services."
+      "content": "We offer cylinder regeneration, restoring parameters close to factory specification."
     },
     "honing": {
       "title": "Liner Honing",
-      "content": "We perform honing of cylinder liners."
+      "content": "We hone cylinder liners, ensuring the right surface finish and geometry of the working surface."
     },
     "production": {
-      "title": "Production",
-      "content": "On individual orders, we manufacture parts from cast iron, steel, and non-ferrous metals according to customer requirements."
+      "title": "Custom Production",
+      "content": "On individual orders, we manufacture parts from cast iron, steel and non-ferrous metals to customer requirements."
     },
     "backToTop": "↑ Back to top"
   },
   "technology": {
     "title": "Technology and Manufacturing Conditions",
-    "intro": "GREGORIUS produces its products according to developed technology adapted to technical requirements for spare parts for internal combustion engines and the high demands of its customers.",
+    "eyebrow": "How our parts are made",
+    "intro": "GREGORIUS produces its parts according to a refined technology, adapted to the technical requirements of spare parts for internal combustion engines and the high expectations of our customers.",
     "conditions": {
-      "title": "Manufacturing Conditions:",
+      "title": "Manufacturing Conditions",
       "materials": {
-        "title": "1. Materials",
-        "content": "Materials come from MAHLE Poland in Krotoszyn. Cast iron castings for cylinder liners and valve seats are produced in accordance with relevant industry standards."
+        "title": "Materials",
+        "content": "Materials come from MAHLE Poland in Krotoszyn. We produce cast iron castings for cylinder liners and valve seats in accordance with the relevant industry standards."
       },
       "processing": {
-        "title": "2. Processing",
-        "content": "Cylinder liners and other products undergo heat treatment to improve mechanical properties. Production uses a wide range of machine tools - from universal lathes to specialized LSP class automatics and ultra-modern GILDEMEISTER CNC machine tools. Final precision is achieved through grinding on shaft grinders."
+        "title": "Processing",
+        "content": "Cylinder liners and other products undergo heat treatment to improve their mechanical properties. Production uses a wide range of machine tools — from universal lathes, through LSP-class automatics, to modern GILDEMEISTER CNC machines. Final precision is achieved by grinding on shaft grinders."
       },
       "conservation": {
-        "title": "3. Conservation",
-        "content": "All products are preserved with anti-corrosion agents from Fuchs."
+        "title": "Conservation",
+        "content": "All products are protected with anti-corrosion agents from Fuchs."
       },
       "packaging": {
-        "title": "4. Packaging",
-        "content": "Products are packaged in cardboard boxes. Bulk packaging is adapted to individual customer requirements."
+        "title": "Packaging",
+        "content": "Products are packed in cardboard boxes. Bulk packaging is adapted to individual customer requirements."
       },
       "shipping": {
-        "title": "5. Shipping",
-        "content": "Ordered products are shipped to customers according to individual arrangements: by courier, mail, or own transport."
+        "title": "Shipping",
+        "content": "Ordered products are shipped according to individual arrangements: by courier, mail or our own transport."
       }
     },
     "backToTop": "↑ Back to top"
   },
   "contact": {
     "title": "Contact",
-    "contact": "Contact",
+    "eyebrow": "Let's talk",
+    "intro": "Got a question about a product, a quote or a custom order? Write or call — we'll reply quickly and to the point.",
+    "contact": "Contact details",
     "phone": "Phone",
     "phoneStationary": "Landline",
     "email": "Email",
@@ -134,18 +185,18 @@
       "name": "Name",
       "email": "Email",
       "message": "Message",
-      "messagePlaceholder": "Your message content",
+      "messagePlaceholder": "Tell us what you need — engine type, dimensions, quantity…",
       "sending": "Sending",
-      "send": "Send",
-      "success": "Email sent!",
-      "error": "Message was not sent"
+      "send": "Send message",
+      "success": "Your message has been sent!",
+      "error": "The message could not be sent"
     },
     "backToTop": "↑ Back to top"
   },
   "common": {
     "menu": "Menu",
     "companyName": "GREGORIUS",
-    "producer": "Spare Parts Manufacturer"
+    "producer": "Spare Parts Manufacturer",
+    "tagline": "Cylinder liners & valve seats"
   }
 }
-
