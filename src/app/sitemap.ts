@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { SITE_URL } from '@/lib/site'
+import { posts } from '@/content/blog'
 
 export const dynamic = 'force-static'
 
@@ -11,6 +12,7 @@ const pages: { pl: string; en: string; priority: number }[] = [
   { pl: '/pl/produkty', en: '/en/products', priority: 0.9 },
   { pl: '/pl/uslugi', en: '/en/services', priority: 0.8 },
   { pl: '/pl/technologia', en: '/en/technology', priority: 0.7 },
+  { pl: '/pl/blog', en: '/en/blog', priority: 0.7 },
   { pl: '/pl/kontakt', en: '/en/contact', priority: 0.6 },
 ]
 
@@ -20,7 +22,7 @@ const withSlash = (path: string) => `${BASE}${path}/`
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date()
 
-  return pages.flatMap((page) => {
+  const staticEntries = pages.flatMap((page) => {
     const languages = {
       pl: withSlash(page.pl),
       en: withSlash(page.en),
@@ -34,4 +36,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages },
     }))
   })
+
+  const postEntries = posts.flatMap((post) => {
+    const languages = {
+      pl: withSlash(`/pl/blog/${post.slug.pl}`),
+      en: withSlash(`/en/blog/${post.slug.en}`),
+    }
+
+    return (['pl', 'en'] as const).map((locale) => ({
+      url: withSlash(`/${locale}/blog/${post.slug[locale]}`),
+      lastModified: new Date(post.updated ?? post.date),
+      changeFrequency: 'yearly' as const,
+      priority: 0.6,
+      alternates: { languages },
+    }))
+  })
+
+  return [...staticEntries, ...postEntries]
 }

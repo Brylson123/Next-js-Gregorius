@@ -4,15 +4,23 @@ import { useLocale } from 'next-intl'
 import { usePathname, getPathname } from '@/i18n/navigation'
 import { routing } from '@/i18n/routing'
 
-export default function LanguageSwitcher() {
+export default function LanguageSwitcher({
+  alternates,
+}: {
+  alternates?: Partial<Record<string, string>>
+}) {
   const locale = useLocale()
   const pathname = usePathname()
 
   const switchLanguage = (newLocale: string) => {
-    const newPath = getPathname({
-      href: pathname,
-      locale: newLocale,
-    })
+    // On pages with per-language slugs (e.g. blog posts) use the explicit
+    // alternate URL; otherwise keep the current path and swap the locale.
+    const newPath =
+      alternates?.[newLocale] ??
+      getPathname({
+        href: pathname,
+        locale: newLocale,
+      })
     window.location.href = newPath
   }
 

@@ -4,6 +4,7 @@
     "products": "Produkty",
     "services": "Usługi",
     "technology": "Technologia",
+    "blog": "Blog",
     "contact": "Kontakt"
   },
   "header": {
@@ -192,6 +193,21 @@
       "error": "Nie udało się wysłać wiadomości"
     },
     "backToTop": "↑ Na początek"
+  },
+  "blog": {
+    "title": "Blog / Baza wiedzy",
+    "eyebrow": "Wiedza o tulejach i gniazdach",
+    "intro": "Praktyczne poradniki o tulejach cylindrowych, gniazdach zaworowych i obróbce silników. Dzielimy się wiedzą, którą zdobywamy w produkcji od ponad 60 lat.",
+    "readMore": "Czytaj dalej",
+    "readingTime": "{min} min czytania",
+    "publishedOn": "Opublikowano",
+    "updatedOn": "Aktualizacja",
+    "backToBlog": "← Wróć na blog",
+    "faqTitle": "Najczęstsze pytania",
+    "relatedTitle": "Zobacz także",
+    "ctaTitle": "Potrzebujesz tulei lub gniazd zaworowych?",
+    "ctaText": "Dobierzemy część do Twojego silnika lub wykonamy ją na zamówienie.",
+    "ctaButton": "Skontaktuj się"
   },
   "common": {
     "menu": "Menu",

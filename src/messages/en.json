@@ -4,6 +4,7 @@
     "products": "Products",
     "services": "Services",
     "technology": "Technology",
+    "blog": "Blog",
     "contact": "Contact"
   },
   "header": {
@@ -192,6 +193,21 @@
       "error": "The message could not be sent"
     },
     "backToTop": "↑ Back to top"
+  },
+  "blog": {
+    "title": "Blog / Knowledge Base",
+    "eyebrow": "Liner & valve seat know-how",
+    "intro": "Practical guides on cylinder liners, valve seats and engine machining. We share the knowledge we have gained in production for over 60 years.",
+    "readMore": "Read more",
+    "readingTime": "{min} min read",
+    "publishedOn": "Published",
+    "updatedOn": "Updated",
+    "backToBlog": "← Back to blog",
+    "faqTitle": "Frequently asked questions",
+    "relatedTitle": "See also",
+    "ctaTitle": "Need cylinder liners or valve seats?",
+    "ctaText": "We will match a part to your engine or make it to order.",
+    "ctaButton": "Contact us"
   },
   "common": {
     "menu": "Menu",

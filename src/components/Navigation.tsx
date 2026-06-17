@@ -36,9 +36,19 @@ const ContactIcon = () => (
   </svg>
 )
 
-type NavPathname = '/' | '/produkty' | '/uslugi' | '/technologia' | '/kontakt'
+const BlogIcon = () => (
+  <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+  </svg>
+)
 
-export default function Navigation() {
+type NavPathname = '/' | '/blog' | '/produkty' | '/uslugi' | '/technologia' | '/kontakt'
+
+export default function Navigation({
+  localeAlternates,
+}: {
+  localeAlternates?: Partial<Record<string, string>>
+}) {
   const [isOpen, setIsOpen] = useState(false)
   const t = useTranslations('nav')
   const tCommon = useTranslations('common')
@@ -49,6 +59,7 @@ export default function Navigation() {
     { pathname: '/produkty', label: t('products'), icon: <ProductsIcon /> },
     { pathname: '/uslugi', label: t('services'), icon: <ServicesIcon /> },
     { pathname: '/technologia', label: t('technology'), icon: <TechIcon /> },
+    { pathname: '/blog', label: t('blog'), icon: <BlogIcon /> },
     { pathname: '/kontakt', label: t('contact'), icon: <ContactIcon /> },
   ]
 
@@ -122,7 +133,7 @@ export default function Navigation() {
             <p className="text-xs mt-1 text-slate-400">{tCommon('producer')}</p>
           </div>
           <div className="pt-2">
-            <LanguageSwitcher />
+            <LanguageSwitcher alternates={localeAlternates} />
           </div>
         </div>
       </nav>
